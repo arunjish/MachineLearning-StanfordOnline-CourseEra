@@ -2,7 +2,6 @@
 The series of code in what I have completed and implemented while attending the course.
 
 ## Code Requirements
-
 You may use either MATLAB or Octave (>= 3.8.0). 
 
 ## Description
