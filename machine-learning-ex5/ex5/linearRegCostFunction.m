@@ -20,6 +20,20 @@ grad = zeros(size(theta));
 %
 
 
+hx= X * theta;
+
+J= (1/(2*m))*sum( (hx-y).^2,1);
+jreg= ((lambda/(2*m)) * sum((theta.^2)(2:end,1:end),1));
+
+
+J=J+jreg;
+
+for j= 1:size(theta)(1)
+    grad(j)= ((1/m) * sum( (hx-y).* X(1:end,j)) )+ (lambda/m) * theta(j);
+endfor
+
+grad(1)=grad(1)-(lambda/m) * theta(1);
+
 
 
 
